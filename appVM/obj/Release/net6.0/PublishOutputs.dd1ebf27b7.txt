@@ -1,0 +1,13 @@
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/appVM
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/appsettings.Development.json
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/appsettings.json
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/appVM.dll
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/appVM.deps.json
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/appVM.runtimeconfig.json
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/appVM.pdb
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/System.Data.SqlClient.dll
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/runtimes/win-arm64/native/sni.dll
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/runtimes/win-x64/native/sni.dll
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/runtimes/win-x86/native/sni.dll
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/mac/Documents/projects/appVM/appVM/obj/Release/net6.0/PubTmp/Out/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
