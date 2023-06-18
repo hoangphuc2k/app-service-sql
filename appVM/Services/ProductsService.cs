@@ -4,8 +4,8 @@ using appVM.Models;
 
 namespace appVM.Services
 {
-	public class ProductsService
-	{
+	public class ProductsService : IProductsService
+    {
 		private readonly IConfiguration configuration;
 
 		public ProductsService(IConfiguration configuration) {

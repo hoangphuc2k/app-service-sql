@@ -1,4 +1,8 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using appVM.Services;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTransient<IProductsService, ProductsService>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();

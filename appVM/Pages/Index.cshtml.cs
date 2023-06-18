@@ -9,10 +9,14 @@ public class IndexModel : PageModel
 {
     public List<Products> products;
 
+    private IProductsService productsService;
+
+    public IndexModel(IProductsService productsService) {
+        this.productsService = productsService;
+    }
+
     public void OnGet()
     {
-        ProductsService productsService = new ProductsService();
-
         products = productsService.getProducts();
     }
 }
