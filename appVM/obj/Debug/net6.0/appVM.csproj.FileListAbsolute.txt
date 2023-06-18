@@ -36,3 +36,10 @@
 /Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
 /Users/mac/Documents/projects/appVM/appVM/obj/Debug/net6.0/appVM.csproj.CopyComplete
+/Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Azure.Core.dll
+/Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Azure.Data.AppConfiguration.dll
+/Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Azure.Messaging.EventGrid.dll
+/Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Azure.Security.KeyVault.Secrets.dll
+/Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Microsoft.Extensions.Configuration.AzureAppConfiguration.dll
+/Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/System.Memory.Data.dll

@@ -9,7 +9,7 @@ public class IndexModel : PageModel
 {
     public List<Products> products;
 
-    private IProductsService productsService;
+    private readonly IProductsService productsService;
 
     public IndexModel(IProductsService productsService) {
         this.productsService = productsService;

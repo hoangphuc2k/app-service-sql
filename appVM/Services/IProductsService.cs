@@ -1,11 +1,9 @@
-﻿using System;
-using appVM.Models;
+﻿using appVM.Models;
 
 namespace appVM.Services
 {
-	public interface IProductsService
-	{
+    public interface IProductsService
+    {
         List<Products> getProducts();
     }
 }
-

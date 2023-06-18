@@ -2,6 +2,10 @@
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = "Endpoint=https://appconfiguration2000.azconfig.io;Id=tF+S;Secret=EXWU9ex82jHoLYgo/6VP2/SkDpyHqR5OBFaPLxUaYzA=";
+
+builder.Host.ConfigureAppConfiguration(builder => builder.AddAzureAppConfiguration(connectionString));
+
 builder.Services.AddTransient<IProductsService, ProductsService>();
 
 // Add services to the container.

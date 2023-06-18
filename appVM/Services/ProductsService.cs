@@ -4,51 +4,52 @@ using appVM.Models;
 
 namespace appVM.Services
 {
-	public class ProductsService : IProductsService
+    public class ProductsService : IProductsService
     {
-		private readonly IConfiguration configuration;
+        private readonly IConfiguration configuration;
 
-		public ProductsService(IConfiguration configuration) {
-			this.configuration = configuration;
-		}
-		
-		private SqlConnection getConnection()
-		{
-			return new SqlConnection(configuration.GetConnectionString("SqlConnectionString"));
+        public ProductsService(IConfiguration configuration)
+        {
+            this.configuration = configuration;
         }
 
-		public List<Products> getProducts()
-		{
-			SqlConnection sqlConnection = getConnection();
+        private SqlConnection getConnection()
+        {
+            return new SqlConnection(configuration["SqlConnectionString"]);
+        }
 
-			List<Products> products = new List<Products>();
+        public List<Products> getProducts()
+        {
+            SqlConnection sqlConnection = getConnection();
 
-			String query = "SELECT productId,productName,quantity FROM Products";
+            List<Products> products = new List<Products>();
 
-			sqlConnection.Open();
+            String query = "SELECT productId,productName,quantity FROM Products";
 
-			SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+            sqlConnection.Open();
 
-			using (SqlDataReader reader = sqlCommand.ExecuteReader())
-			{
-				while (reader.Read())
-				{
-					Products product = new Products()
-					{
-						productId = reader.GetInt32(0),
-						productName = reader.GetString(1),
-						quantity = reader.GetInt32(2),
-					};
+            SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
 
-					products.Add(product);
-				}
-			}
+            using (SqlDataReader reader = sqlCommand.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    Products product = new Products()
+                    {
+                        productId = reader.GetInt32(0),
+                        productName = reader.GetString(1),
+                        quantity = reader.GetInt32(2),
+                    };
 
-			sqlConnection.Close();
+                    products.Add(product);
+                }
+            }
 
-			return products;
+            sqlConnection.Close();
+
+            return products;
 
         }
-	}
+    }
 }
 
