@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mx68CXFLjpQWggiBEchaSfuiAZBPocawc0YGirGGfvJLh4hc+Fk3z/uNViRcCTCCKfJ3+LfqE7eC47+1jdUvVw==",
+  "dgSpecHash": "1EY6ZmuT0b3Artx6GlaVlLORjpSZvPHS7HBpnRcnjZW4tuqxVVxf60nNcg5XFppHSBP8FEXDdh0M9C8GdU4VIg==",
   "success": true,
   "projectFilePath": "/Users/mac/Documents/projects/appVM/appVM/appVM.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,8 @@
     "/Users/mac/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.18/microsoft.extensions.logging.abstractions.3.1.18.nupkg.sha512",
     "/Users/mac/.nuget/packages/microsoft.extensions.options/3.1.18/microsoft.extensions.options.3.1.18.nupkg.sha512",
     "/Users/mac/.nuget/packages/microsoft.extensions.primitives/3.1.18/microsoft.extensions.primitives.3.1.18.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.featuremanagement/2.5.1/microsoft.featuremanagement.2.5.1.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.featuremanagement.aspnetcore/2.5.1/microsoft.featuremanagement.aspnetcore.2.5.1.nupkg.sha512",
     "/Users/mac/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/Users/mac/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/mac/.nuget/packages/runtime.native.system.data.sqlclient.sni/4.7.0/runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",

@@ -1,16 +1,23 @@
 ﻿using System;
 using System.Data.SqlClient;
 using appVM.Models;
+using Microsoft.FeatureManagement;
 
 namespace appVM.Services
 {
     public class ProductsService : IProductsService
     {
         private readonly IConfiguration configuration;
+        private readonly IFeatureManager featureManager;
 
-        public ProductsService(IConfiguration configuration)
+        public ProductsService(IConfiguration configuration, IFeatureManager featureManager)
         {
             this.configuration = configuration;
+            this.featureManager = featureManager;
+        }
+
+        public async Task<bool> isBeta() {
+            return await this.featureManager.IsEnabledAsync("beta");
         }
 
         private SqlConnection getConnection()

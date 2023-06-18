@@ -43,3 +43,6 @@
 /Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Microsoft.Extensions.Configuration.AzureAppConfiguration.dll
 /Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/System.Memory.Data.dll
+/Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Microsoft.FeatureManagement.dll
+/Users/mac/Documents/projects/appVM/appVM/bin/Debug/net6.0/Microsoft.FeatureManagement.AspNetCore.dll
+/Users/mac/Documents/projects/appVM/appVM/obj/Debug/net6.0/appVM.MvcApplicationPartsAssemblyInfo.cs

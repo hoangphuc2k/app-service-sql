@@ -10,6 +10,7 @@ public class IndexModel : PageModel
     public List<Products> products;
 
     private readonly IProductsService productsService;
+    public bool isBeta;
 
     public IndexModel(IProductsService productsService) {
         this.productsService = productsService;
@@ -17,6 +18,7 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
+        this.isBeta = productsService.isBeta().Result;
         products = productsService.getProducts();
     }
 }

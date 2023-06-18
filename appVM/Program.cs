@@ -1,16 +1,17 @@
 ﻿using appVM.Services;
+using Microsoft.FeatureManagement;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = "Endpoint=https://appconfiguration2000.azconfig.io;Id=tF+S;Secret=EXWU9ex82jHoLYgo/6VP2/SkDpyHqR5OBFaPLxUaYzA=";
 
-builder.Host.ConfigureAppConfiguration(builder => builder.AddAzureAppConfiguration(connectionString));
+builder.Host.ConfigureAppConfiguration(builder => builder.AddAzureAppConfiguration(options => options.Connect(connectionString).UseFeatureFlags()));
 
 builder.Services.AddTransient<IProductsService, ProductsService>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+builder.Services.AddFeatureManagement();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
